@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListTableViewCell" rowHeight="113" id="KGk-i7-Jjw" customClass="ListTableViewCell" customModule="MachineTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="115"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MWC-SG-bXG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="110"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icProfilePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="l4u-VO-tJ7">
+                                <rect key="frame" x="10" y="15" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="l4u-VO-tJ7" secondAttribute="height" multiplier="1:1" id="ZLg-Nk-wxj"/>
+                                    <constraint firstAttribute="height" constant="80" id="iDx-86-g9B"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SDn-Vt-IvX">
+                                <rect key="frame" x="100" y="23" width="283" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="abc@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWc-JM-32X">
+                                <rect key="frame" x="100" y="49" width="283" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User ID : 01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pI-WY-7i6">
+                                <rect key="frame" x="100" y="72" width="283" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9pI-WY-7i6" firstAttribute="top" secondItem="HWc-JM-32X" secondAttribute="bottom" constant="5" id="2co-dl-AcY"/>
+                            <constraint firstAttribute="bottom" secondItem="l4u-VO-tJ7" secondAttribute="bottom" constant="15" id="9fR-Aa-XHl"/>
+                            <constraint firstItem="HWc-JM-32X" firstAttribute="leading" secondItem="SDn-Vt-IvX" secondAttribute="leading" id="DIX-ze-gm7"/>
+                            <constraint firstAttribute="trailing" secondItem="SDn-Vt-IvX" secondAttribute="trailing" constant="10" id="Iv1-1E-RtW"/>
+                            <constraint firstItem="l4u-VO-tJ7" firstAttribute="top" secondItem="MWC-SG-bXG" secondAttribute="top" constant="15" id="Nmj-hv-dPy"/>
+                            <constraint firstItem="l4u-VO-tJ7" firstAttribute="leading" secondItem="MWC-SG-bXG" secondAttribute="leading" constant="10" id="WU4-Aq-tra"/>
+                            <constraint firstItem="SDn-Vt-IvX" firstAttribute="leading" secondItem="l4u-VO-tJ7" secondAttribute="trailing" constant="10" id="cO4-IQ-Lf2"/>
+                            <constraint firstItem="9pI-WY-7i6" firstAttribute="leading" secondItem="HWc-JM-32X" secondAttribute="leading" id="eTH-xk-iaL"/>
+                            <constraint firstItem="HWc-JM-32X" firstAttribute="top" secondItem="SDn-Vt-IvX" secondAttribute="bottom" constant="5" id="jag-7D-Oba"/>
+                            <constraint firstItem="SDn-Vt-IvX" firstAttribute="top" secondItem="l4u-VO-tJ7" secondAttribute="top" constant="8" id="uLd-GB-NJr"/>
+                            <constraint firstItem="9pI-WY-7i6" firstAttribute="trailing" secondItem="HWc-JM-32X" secondAttribute="trailing" id="vm4-gT-CLW"/>
+                            <constraint firstItem="HWc-JM-32X" firstAttribute="trailing" secondItem="SDn-Vt-IvX" secondAttribute="trailing" id="xRL-xQ-1Q7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="MWC-SG-bXG" secondAttribute="trailing" id="42h-PE-2AS"/>
+                    <constraint firstAttribute="bottom" secondItem="MWC-SG-bXG" secondAttribute="bottom" constant="5" id="ec1-eG-1fm"/>
+                    <constraint firstItem="MWC-SG-bXG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="gI7-De-UBF"/>
+                    <constraint firstItem="MWC-SG-bXG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jwk-OL-M5p"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgViewUser" destination="l4u-VO-tJ7" id="za8-HN-KKU"/>
+                <outlet property="lblUserEmail" destination="HWc-JM-32X" id="aHs-m3-sHA"/>
+                <outlet property="lblUserId" destination="9pI-WY-7i6" id="6fi-4H-wBt"/>
+                <outlet property="lblUserName" destination="SDn-Vt-IvX" id="6o4-ed-5Wt"/>
+            </connections>
+            <point key="canvasLocation" x="193.47826086956522" y="109.48660714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icProfilePlaceholder" width="100" height="100"/>
+    </resources>
+</document>
