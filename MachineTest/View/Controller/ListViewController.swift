@@ -53,6 +53,7 @@ class ListViewController: UIViewController {
     }
     
     @objc func refreshTable(_ sender: AnyObject) {
+        
         pageCount = 1
         listApiDataArray.removeAll()
         callListApi(pageCount: pageCount)
