@@ -28,6 +28,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
+    func newFunc(){
+        //my new function
+    }
 
 }
 
