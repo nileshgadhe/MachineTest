@@ -74,6 +74,13 @@ class ListViewController: UIViewController {
         listViewModel.apiCallList(listApiString: "https://reqres.in/api/users?page=\(pageCount)&per_page=8")
     }
     
+    func newFunc(){
+        //added new function in home
+    }
+    
+    func testing(){
+        //added testing function
+    }
 }
 
 extension ListViewController : ListViewModelDelegate{
